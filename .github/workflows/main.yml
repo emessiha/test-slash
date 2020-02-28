@@ -13,6 +13,6 @@ jobs:
       run: echo Hello, world!
     - name: Run a multi-line script
       run: |
-        echo "Running Reshift Security Scan"
-        mvn compile com.softwaresecured.reshift:maven-plugin:LATEST:analyse com.softwaresecured.reshift:maven-plugin:LATEST:upload -Dreshift.token=iCLeY9sQEMvWIQhr9PqyeJKuvpByOM0KmK66hfsULu8=
+        echo "Running Maven Build/Test"
+        mvn clean install
 
